@@ -4,10 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import ElementUI from 'element-ui';
-import {
-  Button,
-  Select
-} from 'element-ui';
 //引入 cornerstone,dicomParser,cornerstoneWADOImageLoader
 import * as cornerstone from "cornerstone-core";
 import * as dicomParser from "dicom-parser";
@@ -21,8 +17,7 @@ Vue.use(ElementUI, {
 Vue.use(cornerstone);
 Vue.use(dicomParser);
 Vue.use(cornerstoneWADOImageLoader);
-Vue.use(Button);
-Vue.use(Select);
+
 //指定要注册加载程序的基石实例
 cornerstoneWADOImageLoader.external.cornerstone = cornerstone;
 
